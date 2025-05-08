@@ -158,4 +158,9 @@ class singleLinkedList
                     cout << endl
                          << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus\n" << endl;
             }
+            break;
+            case '3':
+            {
+                mhs.traverse();
+            }
             

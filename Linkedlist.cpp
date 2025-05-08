@@ -138,4 +138,24 @@ class singleLinkedList
             {
                 mhs.addNode();
             }
+            break;
+    
+            case '2':
+            {
+                if (mhs.singleLinkedlistEmpty())
+                {
+                    cout << endl
+                         << "List Kosong\n" << endl;
+                    break;
+                }
+                cout << endl
+                     << "\nMasukkan no mahasiswa yang akan dihapus: ";
+                cin >> nim;
+                if (mhs.delNode(nim) == false)
+                    cout << endl
+                         << "Data tidak ditemukan\n" << endl;
+                else
+                    cout << endl
+                         << "Data dengan nomor mahasiswa " << nim << " berhasil dihapus\n" << endl;
+            }
             
